@@ -30,7 +30,11 @@ const Header = () => {
               pathname === "/" ? "text-purple-600 bg-purple-50 rounded-md" : ""
             }
           >
-            <Link className="flex gap-3 text-sm p-4" href="/">
+            <Link
+              className="flex gap-3 text-sm p-4"
+              href="/"
+              onClick={handleClick}
+            >
               <GoHome className="w-5 h-5" />
               صفحه اصلی
             </Link>
@@ -42,7 +46,11 @@ const Header = () => {
                 : ""
             }
           >
-            <Link className="flex gap-3 text-sm p-4" href="/profile">
+            <Link
+              className="flex gap-3 text-sm p-4"
+              href="/profile"
+              onClick={handleClick}
+            >
               <RiUserLine className="w-5 h-5" />
               حساب کاربری
             </Link>
@@ -54,7 +62,11 @@ const Header = () => {
                 : ""
             }
           >
-            <Link className="flex gap-3 text-sm p-4" href="/products">
+            <Link
+              className="flex gap-3 text-sm p-4"
+              href="/products"
+              onClick={handleClick}
+            >
               <GiTeacher className="w-5 h-5 " />
               دوره ها
             </Link>
@@ -66,7 +78,11 @@ const Header = () => {
                 : ""
             }
           >
-            <Link className="flex gap-3 text-sm p-4" href="/faq">
+            <Link
+              className="flex gap-3 text-sm p-4"
+              href="/faq"
+              onClick={handleClick}
+            >
               <MdOutlineSpeakerNotes className="w-5 h-5 " />
               درباره ما
             </Link>
@@ -78,19 +94,27 @@ const Header = () => {
                 : ""
             }
           >
-            <Link className="flex gap-3 text-sm p-4" href="/about-us">
+            <Link
+              className="flex gap-3 text-sm p-4"
+              href="/about-us"
+              onClick={handleClick}
+            >
               <FaFigma className="w-5 h-5 " />
-              درباره ما
+              سوالات متداول
             </Link>
           </li>
           <li
             className={
-              pathname === "/profile"
+              pathname === "/contact-us"
                 ? "text-purple-600 bg-purple-50 rounded-md"
                 : ""
             }
           >
-            <Link className="flex gap-3 text-sm p-4" href="/profile">
+            <Link
+              className="flex gap-3 text-sm p-4"
+              href="/contact-us"
+              onClick={handleClick}
+            >
               <FiPhoneCall className="w-5 h-5 " />
               ارتباط با ما
             </Link>
